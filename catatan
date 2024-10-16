@@ -1,0 +1,25 @@
+ // if (message.body.startsWith('!download ')) {
+    //     const url = message.body.split(' ')[1]; // Get the TikTok URL from the message
+    //     if (url) {
+    //         try {
+    //             const response = await axios.get(`https://api.tiklydown.eu.org/api/download/v3?url=${encodeURIComponent(url)}`);
+    //             console.log('Response Data:', response.data);
+                
+    //             const videoUrl = response.data.result.video; // Access the video URL
+    //             console.log('Video URL:', videoUrl);
+    //             if (!videoUrl) {
+    //                 client.sendMessage(message.from, 'Tidak dapat menemukan URL video. Pastikan URL TikTok valid.');
+    //                 return;
+    //             }
+    
+    //             // Send the video directly via URL
+    //             await client.sendMessage(message.from, videoUrl, { caption: 'Video TikTok yang diunduh:' });
+    //             console.log('Video sent successfully via URL.');
+    //         } catch (error) {
+    //             console.error('Error downloading or sending video:', error);
+    //             client.sendMessage(message.from, 'Terjadi kesalahan saat mendownload atau mengirim video TikTok.');
+    //         }
+    //     } else {
+    //         client.sendMessage(message.from, 'Silakan berikan link TikTok yang valid.');
+    //     }
+    // }
